@@ -1,0 +1,25 @@
+
+
+<p> Estamos buscando la camada Nro: {{camada}}</p>
+
+
+{% if cursos %}
+<ul>
+
+{% for curso in cursos %}
+    <li><b>Materia:</b> {{curso.nombre}} <b>Nro camada:</b> {{curso.camada}}</li> 
+
+
+
+
+
+    <nav>
+        <p><b>
+        <a href="home">Volver al Inicio</a>
+         </b>
+        <!-- Agrega más enlaces según sea necesario -->
+    </nav>
+
+{% endfor %}
+</ul>
+{% endif %}

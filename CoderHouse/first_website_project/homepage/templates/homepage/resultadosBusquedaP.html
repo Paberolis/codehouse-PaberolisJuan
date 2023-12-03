@@ -1,0 +1,22 @@
+
+
+<p> Estamos buscando el profesor de la materia:{{materia}}</p>
+
+
+{% if profesor %}
+<ul>
+
+{% for profesor in profesor %}
+    <li><b>Nombre:</b> {{profesor.nombre}} / <b>Apellido:</b> {{profesor.apellido}} / <b>Materia:</b>{{profesor.materia}}</li>
+    <li><b>Contacto:</b> {{profesor.email}}</li>
+
+    <nav>
+        <p><b>
+        <a href="home">Volver al Inicio</a>
+         </b>
+        <!-- Agrega más enlaces según sea necesario -->
+    </nav>
+    
+{% endfor %}
+</ul>
+{% endif %}

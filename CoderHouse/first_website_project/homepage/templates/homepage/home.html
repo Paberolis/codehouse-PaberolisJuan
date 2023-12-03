@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2; /* Color de fondo */
+        }
+
+        header {
+            background: #54b1df; /* Color de fondo del encabezado (azul de LinkedIn) */
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100px; /* Ajusta el tamaño máximo del logo según sea necesario */
+            height: auto;
+            border-radius: 40%; /* Hace que la imagen sea circular (como en LinkedIn) */
+            margin-top: 10px; /* Añade espacio arriba del logo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra alrededor del logo */
+        }
+
+        nav {
+            background: #444; /* Color de fondo del menú */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff; /* Color del texto del menú */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <img src="staticfiles/images/IMG_4077.png" alt="Logo de la empresa">
+    </header>
+
+    <nav>
+        <a href="home">Inicio</a>
+        <a href="cursos">Cursos</a>
+        <a href="profesores">Profesores</a>
+        <a href="estudiantes">Alumnos</a>
+    
+        <!-- Agrega más enlaces según sea necesario -->
+    </nav>
+
+    <main>
+        <h1>Bienvenido a la entrega Final del Curso Python Flex</h1>
+        <p>Este es un contenido del Alumno Paberolis Juan Manuel.</p>
+<!-- Esto es lo que va a cambiar -->
+{% block contenidoQueCambia %}
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor para los elementos de búsqueda */
+        .busqueda-container {
+            margin-bottom: 10px; /* Ajusta el valor según sea necesario */
+        }
+
+        /* Estilos para el título y enlaces de búsqueda */
+        .busqueda-container h2,
+        .busqueda-container a {
+            display: block; /* Hace que los elementos ocupen una línea completa */
+            margin-bottom: 5px; /* Ajusta el valor según sea necesario */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor para los elementos de búsqueda -->
+    <div class="busqueda-container">
+        <h2>Buscar:</h2>
+        <a href="busquedaCamada">Buscar materia por Camada</a>
+        <a href="busquedaProfesor">Buscar Profesor por materia</a>
+        <a href="busquedaAlumno">Buscar Alumno por apellido</a>
+    </div>
+
+</body>
+</html>
+
+        
+
+
+{% endblock contenidoQueCambia %}
+
+<!-- Footer-->
+<footer class="footer bg-light">
+
+    </main>
+
+</body>
+</html>
+
+
+</header>
+
+

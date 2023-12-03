@@ -1,0 +1,22 @@
+
+
+<p> Estamos buscando al alumno de apellido:{{apellido}}</p>
+
+
+{% if estudiante %}
+<ul>
+
+{% for estudiante in estudiante %}
+    <li><b>Nombre:</b> {{estudiante.nombre}} / <b>Apellido:</b> {{estudiante.apellido}}</li>
+    <li><b>Contacto:</b> {{estudiante.email}}</li>
+
+    <nav>
+        <p><b>
+        <a href="home">Volver al Inicio</a>
+         </b>
+        <!-- Agrega más enlaces según sea necesario -->
+    </nav>
+    
+{% endfor %}
+</ul>
+{% endif %}
